@@ -1,5 +1,3 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get install -y \
-    curl \
-    nginx
-CMD ["pwd"]
+RUN mkdir /new_dir
+COPY something /new_dir
