@@ -1,5 +1,4 @@
 FROM ubuntu:latest
-ENV key1 value
-ENV key2=value
-ENV key3="v a l u e" key4=v\ a\ l\ u\ e
-ENV key5 v a l u e
+# RUN mkdir sample_folder Dockerが空気読んでくれるのでなしで通る
+WORKDIR /sample_folder
+RUN touch sample_file
