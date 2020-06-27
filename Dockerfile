@@ -1,4 +1,4 @@
 FROM ubuntu:latest
-# RUN mkdir sample_folder Dockerが空気読んでくれるのでなしで通る
-WORKDIR /sample_folder
-RUN touch sample_file
+RUN mkdir new_dir
+# 前回同様マウント用のフォルダはmkdirコマンド打たなくても実行可能
+
